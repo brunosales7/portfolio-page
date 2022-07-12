@@ -1,3 +1,3 @@
 # portfolio-page
 
-https://github.com/brunosales7/portfolio-page
+https://brunosales7.github.io/portfolio-page/
