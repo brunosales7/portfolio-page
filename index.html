@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Bruno Sales</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="crc/css/globais/reset.css">
+  <link rel="stylesheet" href="crc/css/style.css">
+
+</head>
+
+<body>
+  <header class="header__img">
+    <div class="header container-geral">
+      <div class="header__logo">
+        <h1 class="header__logo-logo font-size-l">BS</h1>
+      </div>
+      <nav class="header__nav">
+        <button class="menu-button hidden fullbutton" data-menu="button"></button>
+        <ul class="header__nav-lista hidden" data-menu="list">
+          <li class="font-size-s text-color-dark"><a href="#about">About</a></li>
+          <li class="font-size-s text-color-dark"><a href="#skills">Skills</a></li>
+          <li class="font-size-s text-color-dark"><a href="#work">Work</a></li>
+          <li class="font-size-s text-color-dark"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="apresentacao container-geral">
+      <div class="apresentacao__texto">
+        <span class="apresentacao__texto-ola font-size-s">Olá, me chamo</span>
+        <h1 class="apresentacao__texto-nome font-size-xl">Bruno Sales de Queiroz</h1>
+        <p class="apresentacao__texto-descricao font-size-l">Sou estudante de Front-end, C# e Java</p>
+      </div>
+      <div class="apresentacao__img">
+        <img class="apresentacao__img-img border-shadow" src="crc/img/Perfil.jpg" alt="Foto de Bruno sales">
+      </div>
+    </section>
+
+    <section class="sobre container-geral" id="about">
+      <h2 class="sobre__titulo font-size-l">About</h2>
+      <div class="sobre__div-flex">
+        <div class="sobre__texto font-size-x">
+          <p>Sou formado em Analise e desenvolvimento de Sistemas, estou sempre buscando aprender cada vez mais.</p>
+          <p>Estou estudando as diversas linguagens de programação, buscando ingressar no mercado em breve.
+          </p>
+          <p>Estou muito motivado pelos estudos, e sou focado, organizado e objetivo, sempre buscando aprimorar minhas habilidades, estudando e praticando constantemente.
+          </p>
+        </div>
+        <div class="sobre__redes font-size-m">
+          <a class="sobre__redes-linkedin border-shadow" href="https://www.linkedin.com/in/bruno-sales-537353186/" target="_blank">Linkedin</a>
+          <a class="sobre__redes-github border-shadow" href="https://github.com/brunosales7" target="_blank">GitHub</a>
+          <a class="sobre__redes-cv border-shadow" href="https://drive.google.com/drive/folders/1QFv_uyGSWcNAv_gMTWlN-FyqbfS2RftB" target="_blank">Curriculo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills container-geral" id="skills">
+      <h2 class="skills__titulo font-size-l" data-anime="titulo">Skills</h2>
+      <div class="skills__flex-div">
+        <div class="skills__skill border-shadow" data-anime="skill">
+          <img src="crc/img/html.png" alt="">
+          <span class="skills__skill-texto font-size-s text-color-dark">Html</span>
+        </div>
+        <div class="skills__skill border-shadow" data-anime="skill">
+          <img src="crc/img/css-3.png" alt="">
+          <span class="skills__skill-texto font-size-s text-color-dark">Css</span>
+        </div>
+        <div class="skills__skill border-shadow" data-anime="skill">
+          <img src="crc/img/java-script.png" alt="">
+          <span class="skills__skill-texto font-size-s text-color-dark">JavaScript</span>
+        </div>
+        <div class="skills__skill border-shadow" data-anime="skill">
+          <img src="crc/img/atom.png" alt="">
+          <span class="skills__skill-texto font-size-s text-color-dark">React</span>
+        </div>
+        <div class="skills__skill border-shadow" data-anime="skill">
+          <img src="crc/img/sql-server.png" alt="">
+          <span class="skills__skill-texto font-size-s text-color-dark">Sql Server</span>
+        </div>
+        <div class="skills__skill border-shadow" data-anime="skill">
+            <img src="crc/img/hashtag.png" alt="">
+            <span class="skills__skill-texto font-size-s text-color-dark">C#</span>
+          </div>
+          <div class="skills__skill border-shadow" data-anime="skill">
+            <img src="crc/img/java.png" alt="">
+            <span class="skills__skill-texto font-size-s text-color-dark">Java</span>
+          </div>
+        
+      </div>
+    </section>
+
+    
+    </section>
+
+    <section class="contato container-geral" id="contact" data-anime="titulo">
+      <h2 class="contato__titulo font-size-l">Contact</h2>
+      <p class="contato__text font-size-x">Preencha o formulário abaixo que entrarei em contato.</p>
+      <p class="contato__text-aviso">* Formulário apenas ilustrativo, contatos estão no curriculo.</p>
+      <form action="" class="contato__form">
+        <div class="contato__form-div">
+          <label for="name">Nome</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="contato__form-div">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="contato__form-div">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" required>
+        </div>
+        <div class="contato__form-mensagem">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" required></textarea>
+        </div>
+        <div class="contato__form-button">
+          <button class="border-shadow font-size-s">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text font-size-s text-color-dark">Site Criado por Bruno Sales de Queiroz</p>
+  </footer>
+
+  <script type="module" src="./src/script/script.js"></script>
+</body>
+
+</html>

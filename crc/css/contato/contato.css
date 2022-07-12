@@ -1,0 +1,130 @@
+.contato__text {
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .contato__text-aviso {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.75rem;
+    color: rgb(145, 145, 145);
+  }
+  
+  .contato__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  
+  .contato__form label {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+  }
+  
+  .contato__form input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-color: var(--color-secondary);
+  }
+  
+  .contato__form textarea {
+    resize: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 88%;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-color: var(--color-secondary);
+  }
+  
+  .contato__form-mensagem {
+    grid-column: 2;
+    grid-row: 1/4;
+  }
+  
+  .contato__form-div,
+  .contato__form-mensagem {
+    border: 3px solid var(--shadow-black);
+    box-shadow: 5px 5px var(--shadow-black);
+  }
+  
+  .contato__form input:focus,
+  .contato__form textarea:focus {
+    border: 2px solid var(--shadow-black);
+  }
+  
+  .contato__form-button {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  
+  .contato__form-button button {
+    width: 200px;
+    background-color: var(--color-primary);
+    font-family: "Bebas Neue", cursive;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 1100px) {
+    .contato__form-button button:hover {
+      background-color: var(--color-secondary);
+      color: var(--text-color-dark);
+      box-shadow: 13px 13px var(--shadow-black);
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .contato__form {
+      margin-bottom: 4rem;
+    }
+  
+    .contato__titulo {
+      font-size: 3rem;
+    }
+  
+    .contato__text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contato__form {
+      display: block;
+    }
+  
+    .contato__form-div {
+      margin-bottom: 2rem;
+    }
+  
+    .contato__form input {
+      font-size: 1.2rem;
+    }
+  
+    .contato__form-mensagem {
+      height: 200px;
+      margin-bottom: 2rem;
+    }
+  
+    .contato__form textarea {
+      height: 80%;
+    }
+  
+    .contato__form-button {
+      display: flex;
+      justify-content: center;
+    }
+  }
